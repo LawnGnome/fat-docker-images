@@ -6,6 +6,4 @@ set -x
 MANIFEST="${MANIFEST:-manifest}"
 
 cd "$(dirname "$0")"
-for f in manifests/*.yml; do
-	"$MANIFEST" pushml "$f"
-done
+find manifests -name '*.yml' -exec "$MANIFEST" pushml '{}' ';'
