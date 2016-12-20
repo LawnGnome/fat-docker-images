@@ -1,11 +1,15 @@
 _Fat Ubuntu images, you make the rockin' world go round..._
 
-# Fat Ubuntu images
+# Ubuntu images for x86-64 and armhf in the same repository
 
 This repository uses the support for fat manifests added in Docker's
 [version 2 schema](https://docs.docker.com/registry/spec/manifest-v2-2/) to
 build a single Docker Hub repository that can be pulled and used on both x86-64
 and armhf.
+
+(This is very convenient if you're building Dockerised microservices for a
+Raspberry Pi but want to be able to run them on your x86-64 development machine
+as well for easier development and debugging.)
 
 The images that are bundled together are the current
 [ubuntu](https://hub.docker.com/_/ubuntu/) and
