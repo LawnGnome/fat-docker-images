@@ -4,13 +4,13 @@ _Fat Ubuntu images, you make the rockin' world go round..._
 
 This repository uses the support for fat manifests added in Docker's
 [version 2 schema](https://docs.docker.com/registry/spec/manifest-v2-2/) to
-build a single Docker Hub repository that can be pulled and used on both x86-64
-and armhf for a couple of useful Docker Hub repositories (namely, `ubuntu` and
-`redis`).
+build a set of Docker Hub repositories that bundle the x86-64 and armhf
+repositories for useful tools (currently, Ubuntu and Redis) into single
+repositories.
 
-(This is very convenient if you're building Dockerised microservices for a
+This is very convenient if you're building Dockerised microservices for a
 Raspberry Pi but want to be able to run them on your x86-64 development machine
-as well for easier development and debugging.)
+as well for easier development and debugging.
 
 This uses the extremely nifty
 [manifest-tool](https://github.com/estesp/manifest-tool) tool to actually do
@@ -22,6 +22,9 @@ The images that are bundled together are the current
 [redis](https://hub.docker.com/_/redis/) and
 [armhf/redis](https://hub.docker.com/r/armhf/redis/) images on Docker Hub.
 
+The combined repository can be found at
+[lawngnome/redis](https://hub.docker.com/r/lawngnome/redis).
+
 ## Ubuntu
 
 The images that are bundled together are the current
@@ -29,6 +32,9 @@ The images that are bundled together are the current
 [armhf/ubuntu](https://hub.docker.com/r/armhf/ubuntu/) images on Docker Hub.
 Only tags that exist in both images are pushed: at present, that's `precise`,
 `trusty`, `xenial` and `yakkety`.
+
+The combined repository can be found at
+[lawngnome/ubuntu](https://hub.docker.com/r/lawngnome/ubuntu).
 
 ## How do I use these images?
 
