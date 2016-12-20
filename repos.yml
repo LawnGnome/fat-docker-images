@@ -1,0 +1,27 @@
+-
+    architectures:
+        -
+            name: arm
+            source: armhf/python
+        -
+            name: amd64
+            source: library/python
+    target: lawngnome/python
+-
+    architectures:
+        -
+            name: arm
+            source: armhf/redis
+        -
+            name: amd64
+            source: library/redis
+    target: lawngnome/redis
+-
+    architectures:
+        -
+            name: arm
+            source: armhf/ubuntu
+        -
+            name: amd64
+            source: library/ubuntu
+    target: lawngnome/ubuntu
