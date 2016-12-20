@@ -26,7 +26,7 @@ the work of merging the different images into the same repository.
 On x86-64, you can use this as a drop in replacement for the normal `ubuntu`
 image:
 
-```sh
+```
 adam@x86-64:~$ docker run -it --rm lawngnome/ubuntu:xenial 
 root@9cbbef46747e:/# uname -a
 Linux 9cbbef46747e 4.8.13-1-ARCH #1 SMP PREEMPT Fri Dec 9 07:24:34 CET 2016 x86_64 x86_64 x86_64 GNU/Linux
@@ -37,7 +37,7 @@ Ubuntu 16.04.1 LTS \n \l
 Similarly, on armhf, you can use this as a drop in replacement for
 `armhf/ubuntu`:
 
-```sh
+```
 adam@armhf:~$ docker run -it --rm lawngnome/ubuntu:xenial
 root@7d7a6ad94c98:/# uname -a
 Linux 7d7a6ad94c98 4.1.18-v7+ #846 SMP Thu Feb 25 14:22:53 GMT 2016 armv7l armv7l armv7l GNU/Linux
