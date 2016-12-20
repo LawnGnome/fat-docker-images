@@ -1,0 +1,12 @@
+image: lawngnome/ubuntu:trusty
+manifests:
+    -
+        image: ubuntu:trusty
+        platform:
+            architecture: amd64
+            os: linux
+    -
+        image: armhf/ubuntu:trusty
+        platform:
+            architecture: arm
+            os: linux
