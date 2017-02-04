@@ -2,6 +2,15 @@
     architectures:
         -
             name: arm
+            source: armhf/alpine
+        -
+            name: amd64
+            source: library/alpine
+    target: lawngnome/alpine
+-
+    architectures:
+        -
+            name: arm
             source: armhf/python
         -
             name: amd64
